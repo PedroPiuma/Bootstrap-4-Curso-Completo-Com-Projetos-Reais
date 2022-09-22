@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/flexbox.css">
+</head>
+
+<body>
+    <!-- FILL É O FAMOSO CHEGA PARA LÁ UM POUCO CASO PRECISE DE ESPAÇO -->
+    <div class="container">
+        <div style="height: 200px;" class="d-flex bg">
+            <div class="bg p-2 flex-fill">Testando flex fill</div>
+            <div class="bg p-2 flex-fill">2</div>
+            <div class="bg p-2 flex-fill">3</div>
+        </div>
+
+        <div class="d-flex bg">
+            <!-- FLEX-GROW É PARECIDO COM O FILL,
+            MAS NÃO É GENEROSO, PEGANDO TODO ESPAÇO POSSÍVEL
+            DEIXANDO OUTRO ELEMENTO APENAS COM O NECESSÁRIO
+            PARA EXISTER -->
+            <div class="bg p-2 flex-grow-1">1</div>
+            <div class="bg p-2 ">2</div>
+            <div class="bg p-2 ">3</div>
+        </div>
+
+        <div class="d-flex bg">
+            <!-- FLEX-SHRINK FAZ OPOSTO DO GROWN, ESCOLHENDO
+            O ELEMENTO -->
+            <div class="bg p-2 flex-shrink-1">1</div>
+            <!-- W-100 FAZ O ELEMENTO OCUPAR TODA LARGURA DISPONÍVEL (100 COMO PORCENTAGEM) -->
+            <div class="bg p-2 w-50">2</div>
+        </div>
+    </div>
+
+    <script src="../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
