@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/grid-system-teste.css">
+</head>
+
+<body>
+
+    <div class="container">
+        Página teste
+        <div class="row">
+            <div class="col-12">
+                <header>
+                    <h3>Logo e título</h1>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-4 order-sm-2 sticky">
+                <nav class="sticky">
+                    <div id="acesso-rapido">
+                        <div id="acesso-rapido-title">
+                            <span>Acesso rápido</span>
+                            <span id="acesso-rapido-icon">+</span>
+                        </div>
+                        <div id="acesso-rapido-links">
+                            <a href="#">O papel vital do sistema imunológico</a>
+                            <a href="#">Inflamação: causas e consequências</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-12 col-sm-8 order-sm-1 content">
+                <main>Conteúdo
+                    <p>O papel vital do sistema imunológico</p>
+                    <p>O sistema imunológico atua na proteção do corpo de agentes nocivos e
+                        alterações
+                        celulares com potencial para
+                        ocasionar doenças. No entanto, para funcionar com desempenho máximo, nosso organismo precisa
+                        de equilíbrio e
+                        harmonia entre vitaminas e minerais para poder manter nossas defesas saudáveis. </p>
+                    <p>Por outro lado, deficiências nutricionais podem levar à
+                        imunossenescência -
+                        alterações do sistema imunológico
+                        que decorrem do envelhecimento - particularmente a suscetibilidade a infecções e a
+                        progressões de
+                        inflamações. </p>
+                </main>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <footer>Footer</footer>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const title = document.querySelector('#acesso-rapido-title')
+        const links = document.querySelector('#acesso-rapido-links')
+        const icon = document.querySelector('#acesso-rapido-icon')
+        const accordion = () => {
+            links.classList.toggle('displayHidden')
+            icon.innerHTML = icon.innerHTML === '-' ? '+' : '-'
+        }
+        title.addEventListener('click', accordion)
+    </script>
+
+    <script src="../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

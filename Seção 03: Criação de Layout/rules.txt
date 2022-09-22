@@ -1,0 +1,11 @@
+CLASSE: .container
+Container abraça tudo e centraliza todo conteúdo
+
+CLASSE: .row
+Cada linha recebe uma class ((.row)) e precisa estar dentro de .container
+
+CLASSE: .col-(1 até 12)
+Quantidade de colunas que o elemento vai ocupar na grid de 1 até 12 
+
+TODO CONTAINER TEM UM ROW
+TODO ROW TEM UM COL

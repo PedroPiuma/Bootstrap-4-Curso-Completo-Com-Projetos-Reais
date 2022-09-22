@@ -1,0 +1,7 @@
+BOOTSTRAP
+FOCADO EM ATÉ 576px
+ACIMA DISSO:
+min-width: 576px (sm)
+min-width: 768px (md)
+min-width: 992px (lg)
+min-width: 1200px (xl)
