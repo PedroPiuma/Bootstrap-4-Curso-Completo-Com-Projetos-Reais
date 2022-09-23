@@ -1,0 +1,36 @@
+.header {
+    background-color: #FB7415;
+}
+
+.content {
+    min-height: 80vh;
+}
+
+.menu-list {
+    background-color: #EEEEEE;
+    overflow: auto;
+    height: fit-content;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #434343;
+}
+
+@media (min-width: 576px) {
+    .header {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* @media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {} */
