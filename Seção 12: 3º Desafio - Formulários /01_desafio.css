@@ -1,0 +1,10 @@
+body {
+    padding: 50px 0;
+}
+
+input#firstName,
+input#lastName,
+input#state,
+input#country {
+    height: 36px;
+}

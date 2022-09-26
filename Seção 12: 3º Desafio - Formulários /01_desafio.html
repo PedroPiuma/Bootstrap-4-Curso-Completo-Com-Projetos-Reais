@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./01_desafio.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <form action="">
+            <div class="form-row">
+                <div class="col form-group">
+                    <label for="firstName">Primeiro nome</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName">
+                </div>
+                <div class="col form-group ">
+                    <label for="lastName">Último nome</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName">
+                </div>
+            </div>
+            <hr>
+            <div class="col col-md-4 form-group px-0">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" name="cep" id="cep">
+            </div>
+            <div class="form-row">
+                <div class="col-md-8 form-group">
+                    <label for="address">Endereço</label>
+                    <input type="text" class="form-control" name="address" id="address" placeholder="Rua, Av...">
+                </div>
+                <div class="col-md-4 form-group px-0">
+                    <label for="number">Número</label>
+                    <input type="text" class="form-control" name="number" id="number">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 form-group">
+                    <label for="complement">Complemento</label>
+                    <input type="text" class="form-control" name="complement" id="complement">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label for="district">Bairro</label>
+                    <input type="text" class="form-control" name="district" id="district">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 form-group">
+                    <label for="city">Cidade</label>
+                    <input type="text" class="form-control" name="city" id="city">
+                </div>
+                <div class="col-md-4 form-group">
+                    <label for="state">Estado</label>
+                    <input type="text" class="form-control" name="state" id="state">
+                </div>
+                <div class="col-md-4 form-group">
+                    <label for="country">País</label>
+                    <input type="text" class="form-control" name="country" id="country">
+                </div>
+            </div>
+            <button class="btn btn-primary w-100">Salvar</button>
+        </form>
+    </div>
+
+
+    <!-- JQUERY PRECISAR ESTAR ANTES DO BOOTSTRAP -->
+    <script src="../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
