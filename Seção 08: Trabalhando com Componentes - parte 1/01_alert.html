@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="alert alert-success" role="alert">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quasi corrupti quam maxime ipsa modi dolorem
+            laboriosam saepe est omnis animi voluptates hic iste ut, consequuntur ea possimus. Tempore, tenetur?
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="alert alert-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                    suscipit cumque inventore minima dolore. Cumque ipsum, error similique, maiores voluptatibus, ullam
+                    qui unde voluptates aliquid maxime praesentium quas? Voluptatum, minus.</div>
+            </div>
+            <div class="col-sm">
+                <div class="alert alert-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                    suscipit cumque inventore minima dolore. Cumque ipsum, error similique, maiores voluptatibus, ullam
+                    qui unde voluptates aliquid maxime praesentium quas? Voluptatum, minus.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <div class="alert alert-danger">Lorem ipsum dolor sit amet consect </div>
+            </div>
+            <div class="col-sm">
+                <div class="alert alert-warning">Lorem ipsum dolor sit amet consectetu.</div>
+            </div>
+        </div>
+
+        <div class="alert alert-info">Information <a href="https://www.google.com/">Google</a></div>
+
+        <div class="alert alert-dark">
+            <h4>Título</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, fuga ex! Necessitatibus beatae, sequi
+                consequatur illum vitae adipisci consectetur neque quibusdam deleniti voluptatibus quas inventore
+                blanditiis alias ab natus odio!</p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, fuga ex! Necessitatibus beatae, sequi
+                consequatur illum vitae adipisci consectetur neque quibusdam deleniti voluptatibus quas inventore
+                blanditiis alias ab natus odio!</p>
+        </div>
+
+        <div class="alert alert-success alert-dismissible fade show" role="alert">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Minus eligendi saepe voluptate id cum nulla tempora eum, deserunt necessitatibus, iure
+            alias, corrupti assumenda minima reiciendis fugit nesciunt? Odit, labore est.
+            <button class="close" data-dismiss="alert" aria-label="close"><span
+                    aria-hidden="true">&times;</span></button>
+        </div>
+
+        <button id="btn-close-all" type="button">Fechas todos alertas</button>
+
+    </div>
+
+    <!-- JQUERY PRECISAR ESTAR ANTES DO BOOTSTRAP -->
+    <script src="../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(element => console.log(element))
+
+        // EXECUTAR FUNÇÃO -> SELECIONA O BOTÃO PELO ID -> 
+        // ADICIONA EVENT LISTENER CLICK -> 
+        // SELECIONA TODOS .ALERT -> CHAMA FUNÇÃO ALERT DO BOOTSTRAP COM PARÂMETRO CLOSE
+        $(() => $('#btn-close-all').on('click', e => $('.alert').alert('close')))
+    </script>
+</body>
+
+</html>
