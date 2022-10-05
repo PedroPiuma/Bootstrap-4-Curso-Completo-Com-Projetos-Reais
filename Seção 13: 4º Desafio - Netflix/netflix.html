@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        #navbar {
+            background-color: #000000;
+        }
+
+        #navbar button.navbar-toggler {
+            padding: 0;
+            border: 0;
+        }
+
+        #form-search input {
+            font-size: 24px;
+            padding: 0 12px;
+            height: fit-content;
+            width: 180px;
+        }
+
+        #intro {
+            background-color: #1C1C1C;
+        }
+
+        #intro img {
+            max-width: 600px;
+        }
+
+        #intro .intro-image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        #intro .intro-image-container:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 10px 0px 5px 0px #1C1C1C;
+        }
+
+        .card button {
+            background-color: #E62B12;
+            color: #ffffff;
+            text-transform: uppercase
+        }
+
+        .carousel,
+        #footer {
+            background-color: rgb(19, 19, 19);
+        }
+
+        .carousel .carousel-gallery {
+            gap: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark " id="navbar">
+                <div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span><img src="./image/icons8-menu-arredondado-30.png" alt="" height="30px"
+                                width="30px"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src='./image/580b57fcd9996e24bc43c529.png' height="56px"
+                            alt=""></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Navegar<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Infantil</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="form-inline my-2 my-lg-0" id="form-search">
+                    <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Buscar" aria-label="Search">
+                </form>
+            </nav>
+        </header>
+
+        <main>
+            <div class="card text-white" id="intro">
+                <div class="intro-image-container ml-auto">
+                    <img src=" ./image/dima-solomin-sOU09hnONrQ-unsplash.jpg" class="card-img" alt="...">
+                </div>
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Vingadores: Ultimato</h5>
+                    <p class="card-text text-muted">2019 12 182min</p>
+                    <button type="button" class="btn">Assistir</button>
+                </div>
+            </div>
+            <div class="carousel p-4">
+                <h4 class="text-muted">Populares na Netflix</h4>
+                <div class="carousel-gallery d-flex overflow-auto">
+                    <img src="./image/yuvraj-singh-4V07cUP8Sxc-unsplash.jpg" height="150px" alt="">
+                    <img src="./image/osman-rana-IRSyulBDNc0-unsplash.jpg" height="150px" alt="">
+                    <img src="./image/mathew-macquarrie-u6OnpbMuZAs-unsplash.jpg" height="150px" alt="">
+                    <img src="./image/james-hartono-xs9_xgbQ69E-unsplash.jpg" height="150px" alt="">
+                    <img src="./image/james-hartono-xs9_xgbQ69E-unsplash.jpg" height="150px" alt="">
+                </div>
+            </div>
+            <div class="carousel p-4">
+                <h4 class="text-muted">Em alta</h4>
+                <div class="carousel-gallery d-flex overflow-auto">
+                    <img src="./image/james-hartono-xs9_xgbQ69E-unsplash.jpg" height="150px" alt="">
+                    <img src="./image/mathew-macquarrie-u6OnpbMuZAs-unsplash.jpg" height="150px" alt="">
+                    <img src="./image/yuvraj-singh-4V07cUP8Sxc-unsplash.jpg" height="150px" alt="">
+                    <img src="./image/osman-rana-IRSyulBDNc0-unsplash.jpg" height="150px" alt="">
+                    <img src="./image/james-hartono-xs9_xgbQ69E-unsplash.jpg" height="150px" alt="">
+                </div>
+            </div>
+            <div class="carousel p-4">
+                <h4 class="text-muted">Continuar assistindo como VELHO BARRERO</h4>
+                <div class="carousel-gallery d-flex overflow-auto">
+                    <img src="./image/ahmet-yalcinkaya-aNrRsB2wLDk-unsplash.jpg" height="150px" alt="">
+                    <img src="./image/dima-solomin-sOU09hnONrQ-unsplash.jpg" height="150px" alt="">
+                    <img src="./image/mathew-macquarrie-u6OnpbMuZAs-unsplash.jpg" height="150px" alt="">
+                    <img src="./image/james-hartono-xs9_xgbQ69E-unsplash.jpg" height="150px" alt="">
+                    <img src="./image/james-hartono-xs9_xgbQ69E-unsplash.jpg" height="150px" alt="">
+                </div>
+            </div>
+        </main>
+        <footer id="footer" class="d-flex flex-column p-4 flex-md-row justify-content-around">
+            <a href="#" class="text-muted">Termos de uso</a>
+            <a href="#" class="text-muted">Declaração de privacidade</a>
+            <a href="#" class="text-muted">Preferência de cookies</a>
+            <a href="#" class="text-muted">Centro de ajuda</a>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
